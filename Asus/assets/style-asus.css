@@ -1,0 +1,383 @@
+@font-face {
+    font-family: 'MYRIADPRO-REGULAR';
+    src: url('/fonts/MYRIADPRO-REGULAR.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'TT Norms Pro Normal';
+  src: url('/fonts/TT Norms Pro Normal.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'TT Norms Pro Regular';
+  src: url('/fonts/TT Norms Pro Regular.otf') format('otf');
+}
+
+
+
+body {
+    font-family: "MYRIADPRO-REGULAR", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+h1{
+  font-family: 'TT Norms Pro Normal', sans-serif;
+  font-size: 40px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+   
+  }
+  
+.logo img {
+    height: 100px;
+    width: auto;
+  }
+  
+nav ul.menu {
+    list-style: none;
+    margin: auto 100px auto auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: calc(0.5rem + 1.5vw);
+  }
+  
+nav ul.menu li {
+    margin-left: 20px;
+  }
+  
+nav ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+img {
+  width: 100%;
+}
+
+
+#icons{
+  display: none;
+  cursor: pointer;
+}
+
+.banner{
+  background-image: url('../images/background_banner.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+.text-banner p {
+  font-size: 18px;
+  margin: 25px 0;
+}
+
+.text-banner h2 {
+  font-size: 6vw;
+  margin: 10px 0;
+  color: #fff;
+  text-shadow: 1px 1px 1px #e39f5c;
+}
+
+.text-banner p .contain{
+  display: flex;
+  align-items: center;
+}
+
+.text-banner p img{
+  width: 15px;
+  height: 100%;
+}
+
+.text-banner .contain {
+  color: #e39f5c;
+  text-shadow: 1px 1px 1px #fff;
+  font-weight: bold;
+}
+
+.text-banner p span{
+  color: #e39f5c;
+  text-shadow: 1px 1px 1px #fff;
+  font-size: 2vw;
+}
+
+.text-banner p {
+  color: #fff;
+  text-shadow: 1px 1px 1px #e39f5c;
+  font-size: 2vw;
+}
+
+.date {
+  font-size: 15px;
+  margin: 5px 0;
+  color: #26606b;
+  text-shadow: 0 1px 2px #fff;
+}
+
+.button {
+  font-size: 1vw;
+  padding: 10px 20px;
+  background-color: #e39f5c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.img-banner{
+  max-width: 50%;
+}
+
+.img-banner img{
+  width: 60%;
+  height: auto;
+}
+
+/* bloc produit */
+
+.product-presentation{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+}
+
+main{
+  margin-top: 45px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* .carousel {
+  width: 100%; 
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.carousel img:first-child {
+  opacity: 1;
+} */
+
+.product {
+  width: 30%; /* Vous pouvez ajuster la largeur selon vos préférences */
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.product img {
+  width: 150px;
+  height: 150px;
+}
+
+.product h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+}
+
+.product p {
+  margin-top: 5px;
+  font-size: 1rem;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+}
+
+.product .price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e39f5c;
+}
+
+.product .price .price-crossedout{
+  text-decoration: line-through;
+  color: #B1B2B1;
+  font-size: 13px;
+}
+
+.buy-button {
+  display: block;
+  margin-top: 10px;
+  background-color: #133EDA;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #EBEBEB;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.logos img {
+  width: auto;
+  height: auto;
+  margin: 10px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.footer-text {
+  text-align: left;
+  margin-left: 20px;
+  display: flex;
+  font-size: 13px;
+  
+}
+
+.footer-text A {
+  text-decoration: none;
+  color: #434446;
+}
+
+.line::after{
+  border-left: 1px solid #ccc;
+}
+
+
+/* /
+
+/* Réglages pour les appareils de petite taille */
+@media screen and (max-width: 650px) {
+  .logo img {
+    height: 80px;
+  }
+  #icons{
+    display: block;
+  }
+  #icons::before{
+    content: "\2630";
+  }
+  .active #icons::before{
+    content: "\2715";
+  }
+ 
+  nav ul.menu{
+      position: fixed;
+      left: -100%;
+      top: 8%;
+      flex-direction: column;
+      background: skyblue;
+      width: 100%;
+      text-align: center;
+      transition: 0.25s;
+    }
+
+  nav ul.menu li {
+      padding: 3px;
+    }
+  nav.active ul.menu {
+      left: 0;
+    }
+
+  .banner-container{
+      flex-direction: column;
+      text-align: center;
+    }
+
+  .product {
+      width: 100%;
+  }
+
+  .text-banner .img-banner{
+    max-width: 100%;
+    text-align: center;
+  }
+  .text-banner h2 {
+    font-size: 10vw;
+  }
+  .text-banner p {
+    margin: 20px;
+    font-size: 3vw;
+  }
+  .text-banner .button {
+    font-size: 2vw;
+  }
+  .date {
+    font-size: 0.5;
+  }
+  .text-banner p span{
+    font-size: 10px;
+  }
+  .footer-text {
+    display: block;
+  }
+}
+
+
+
+/* Réglages pour les appareils de très petite taille */
+@media screen and (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+    .img-banner .text-banner{
+      text-align: center;
+      max-width: 100%;
+    }
+    .text-banner h2 {
+      font-size: 13vw;
+    }
+    .text-banner p {
+      margin: 20px;
+      font-size: 20px;
+    }
+    .text-banner .button {
+      font-size: 10px;
+    }
+}
